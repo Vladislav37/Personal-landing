@@ -288,6 +288,49 @@
   }
   .about-text p:last-child { margin-bottom: 0; }
 
+  /* ---------- Media in "О себе" ---------- */
+  .media-block { margin-top: 44px; }
+  .media-block .overline { margin-bottom: 18px; }
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .media-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 26px;
+  }
+  .media-card .label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .media-card h3 {
+    font-size: 17px;
+    color: var(--navy);
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+  .media-card p {
+    font-size: 14.5px;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .media-link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--blue-dark);
+    text-decoration: none;
+  }
+  .media-link:hover { text-decoration: underline; }
+
   /* ---------- Quote ---------- */
   .quote {
     border-left: 4px solid var(--blue);
@@ -434,6 +477,7 @@
 
   @media (max-width: 560px) {
     .audience-grid { grid-template-columns: 1fr; }
+    .media-grid { grid-template-columns: 1fr; }
     .section { padding: 52px 0; }
     .hero { padding: 64px 0 52px; }
     .form-box { padding: 28px 22px; }
@@ -519,6 +563,24 @@
           следующие шаги. Поэтому на консультациях мы будем работать с вашим контекстом: командой,
           процессами, людьми и решениями, которые предстоит принять.
         </p>
+      </div>
+
+      <div class="media-block">
+        <span class="overline">Выступления и медиа</span>
+        <div class="media-grid">
+          <div class="media-card">
+            <span class="label">YouTube · Saint TeamLead Conf 2026</span>
+            <h3>Рецепты эффективного найма: как масштабировать процесс и не сойти с ума</h3>
+            <p>Доклад на конференции о выстраивании процесса найма команды с нуля и его масштабировании без потери качества.</p>
+            <a class="media-link" href="https://youtu.be/m-XH_-a38o4" target="_blank" rel="noopener">Смотреть доклад →</a>
+          </div>
+          <div class="media-card">
+            <span class="label">Telegram · RWB Тех</span>
+            <h3>Пост обо мне в канале</h3>
+            <p>Пост обо мне в техническом канале RWB Тех.</p>
+            <a class="media-link" href="https://t.me/tech_rwb/781" target="_blank" rel="noopener">Читать пост →</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
